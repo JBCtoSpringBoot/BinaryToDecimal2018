@@ -15,7 +15,7 @@ public class BinaryToDecimalController {
 
 
     @RequestMapping("/")
-    public String addNewDirector(Model model)
+    public String addNewBinary(Model model)
     {
         model.addAttribute("aBinary", new Binary());
         return "binaryinput";
