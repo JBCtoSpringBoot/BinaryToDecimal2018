@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 public class Binary {
 
     @NotNull
-    @Min(value = 2)
+    @Min(value = 1)
     private int binary;
 
     public int getBinary() {

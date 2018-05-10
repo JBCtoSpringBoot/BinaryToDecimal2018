@@ -2,14 +2,15 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Binary To Decimal</title>
 </head>
 <body>
     <form action="#" th:action="@{/savebinary}" th:object="${aBinary}" method="post">
         <div>
             <label> Enter a valid binary number: </label>
-            <span th:if="${#fields.hasErrors('binary')}" th:errors="*{binary}" ></span>
             <input type="text" th:field="*{binary}" name="mybinary">
+            <span th:if="${#fields.hasErrors('binary')}" th:errors="*{binary}" ></span>
+
         </div>
         <div>
             <button>Save</button>

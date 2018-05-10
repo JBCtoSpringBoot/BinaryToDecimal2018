@@ -27,7 +27,7 @@ public class BinaryToDecimalController {
     {
 
         if(result.hasErrors()){
-            return "redirect:/";
+            return "binaryinput";
         }
         int decimal = 0;
         int digit =0 ;
