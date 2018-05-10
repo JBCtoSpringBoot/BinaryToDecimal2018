@@ -1,5 +1,6 @@
 package com.rekik.binarytodecimal2018;
 
+/*A java console app as a test*/
 public class BinaryToDecimal {
 
     public static void main(String[] args) {
