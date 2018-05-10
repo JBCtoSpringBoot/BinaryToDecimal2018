@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="#" th:action="@{/savebinary}" th:object="${aBinary}" method="post">
+        <div>
+            <label> Enter a valid binary number: </label>
+            <span th:if="${#fields.hasErrors('binary')}" th:errors="*{binary}" ></span>
+            <input type="text" th:field="*{binary}" name="mybinary">
+        </div>
+        <div>
+            <button>Save</button>
+        </div>
+
+    </form>
+</body>
+</html>
